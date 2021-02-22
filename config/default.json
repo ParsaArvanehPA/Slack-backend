@@ -1,0 +1,7 @@
+{
+  "myprivatekey": "myprivatekey",
+  "PORT": 4000,
+  "REFRESH_TOKEN_SECRET": "refreshTokenSecret",
+  "ACCESS_TOKEN_SECRET": "accessTokenSecret",
+  "INVITE_TOKEN_SECRET": "inviteTokenSecret"
+}

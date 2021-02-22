@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+</head>
+
+<body>
+  <style>
+    /* ////////////////////////////////////////////// */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+    /* ////////////////////////////////////////////// */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(240, 240, 240);
+      /* display: flex; */
+      /*justify-content: center; */
+      color: rgb(115, 115, 115);
+      font-family: "poppins";
+      margin-top: 10px;
+    }
+
+    .slack-img {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      bottom: 25px;
+    }
+
+    .title-color {
+      width: 100%;
+      height: 150px;
+      background-color: blueviolet;
+      /* display: flex; */
+      /*justify-content: center; */
+      /*align-items: center; */
+      border-radius: 10px;
+      text-align: center;
+      padding-top: 75px;
+    }
+
+    .main-section {
+      width: 650px;
+      height: 800px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .title-text {
+      /* position: relative; */
+      /* display: flex; */
+      margin: auto;
+      /*justify-content: center; */
+      /*align-items: center; */
+      background-color: white;
+      /* bottom: 50px; */
+      padding-bottom: 50px;
+      /* height: 100px; */
+      width: 90%;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .title-text p {
+      font-size: 18px;
+    }
+
+    .invite-text {
+      /* display: flex; */
+      margin: auto;
+      flex-direction: column;
+      width: 80%;
+    }
+
+    .invite-text p {
+      padding-left: 5px;
+    }
+
+    .invite-code-box {
+      width: 100%;
+      color: white;
+      background-color: rgb(10, 14, 20);
+      word-wrap: break-word;
+      border: 1px black solid;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 10px;
+    }
+
+    #p-1 {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    #p-2 {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    #p-3 {
+      /*align-items: center; */
+      font-size: 14px;
+      /* width: 90%; */
+    }
+
+    .invite-cta {
+      margin: auto;
+      margin-top: 15px;
+      margin-bottom: 75px;
+      padding-left: 187px;
+      /* display: flex; */
+    }
+
+    .copy-btn {
+      padding: 15px;
+      background-color: rgb(0, 1, 10);
+      background-color: blueviolet;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <div class="main-section">
+    <div class="title-color">
+      <img src="https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg" alt="slack Logo" class="slack-img" />
+    </div>
+    <div class="title-text">
+      <p>You've been invited to join a Slack Project.</p>
+    </div>
+    <div class="invite-text">
+      <p id="p-1">Team **** has requested that you join the Slack Project.</p>
+      <p id="p-2">
+        Get Started by using the invite code in the box below.
+      </p>
+      <div class="invite-code-box">
+        <p id="invite-code">
+          eyJwcm9qZWN0TmFtZSI6InRlc3QiLCJpYXQiOjE1OTMxMTA0NzIsImV4cCI6MTU5MzcxNTI3Mn0eyJwcm9qZWN0TmFtZSI6InRlc3QiLCJpYXQiOjE1OTMxMTA0NzIsImV4cCI6MTU5MzcxNTI3Mn0eyJwcm9qZWN0TmFtZSI6InRlc3QiLCJpYXQiOjE1OTMxMTA0NzIsImV4cCI6MTU5MzcxNTI3Mn0
+        </p>
+      </div>
+      <div class="invite-cta">
+        <button class="copy-btn" onclick="copyInviteCode()">
+          Copy invite Code
+        </button>
+      </div>
+      <p id="p-3">
+        <b>The invitation will expire in 7 days.</b> After Creating an account
+        in SLACK.pa, use the invite code to join project '****'
+      </p>
+    </div>
+  </div>
+  <script>
+    function copyInviteCode() { }
+  </script>
+</body>
+
+</html>
